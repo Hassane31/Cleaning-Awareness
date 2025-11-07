@@ -9,11 +9,59 @@
 </head>
 
 <body>
-<header> <h1> Eco Heroes Game </h1></header>
+    <nav class="navbar">
+  <div class="logo">♻️ Eco Kids</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#video">Learn</a></li>
+    <li><a href="#game">Play</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+<section class="eco-cards">
+  <h2>Why Be an Eco Hero?</h2>
+  <div class="cards-container">
+    <div class="card">
+      <img src="images/recycle-icon.png" alt="Recycle Icon">
+      <h3>Reduce Waste</h3>
+      <p>When we recycle properly, we create less garbage and protect our beautiful planet from pollution.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/leaf-icon.png" alt="Leaf Icon">
+      <h3>Protect Nature</h3>
+      <p>Litter harms animals and plants. By not littering, we keep nature safe and healthy.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/leader-icon.png" alt="Leader Icon">
+      <h3>Be a Leader</h3>
+      <p>Real heroes take care of their community and inspire others to do the same!</p>
+    </div>
+  </div>
+</section>
+
+    <div class="video-section">
+    <h2 class="video-title">Watch this short video to learn how to keep our planet clean !</h2>
+<div class="video-container">
+    
+  <iframe
+    width="560"
+    height="315"
+    src="https://youtu.be/Yoqivh3GkaE?feature=shared"
+    title="Educational Recycling Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+</div>
+
+<header> <h1> Help me with the trash disposal</h1></header>
    
     <p>Learn to recycle by playing this fun game !</p>
 
-<div class="game-container">
+<div class="game-container" id="game">
     <div class="game">
         <div class="trash-container">
             <img src="images/paper.png" id="paper" class="trash" draggable="true" data-type="paper" alt="Paper">
@@ -40,7 +88,18 @@
     </div>
     <h2 id="message"></h2>
 <div class="counter">Score: <span id="score">0</span></div>
+</div>
     <script src="script.js"></script>
+    
+    <footer class="footer">
+  <p>🌱 Made with love for a cleaner planet 🌍 | © 2025 Eco Kids</p>
+  <div class="footer-links">
+    <a href="#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  
+</footer>
+</div>
 </body>
 
 </html>
