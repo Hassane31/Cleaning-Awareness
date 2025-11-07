@@ -9,75 +9,36 @@
 </head>
 
 <body>
- <header class="hero">
-        <div class="hero-content">
-            <h1>🌍 Eco Heroes</h1>
-            <p>Heroes Don't Litter - Let's Save Our Planet Together!</p>
-        </div>
-    </header>
+<header> <h1> Eco Heroes Game </h1></header>
+   
+    <p>Learn to recycle by playing this fun game !</p>
 
-    <!-- Educational Content Section -->
-    <section class="education-section">
-        <h2>Why Be an Eco Hero?</h2>
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon">♻️</div>
-                <h3>Reduce Waste</h3>
-                <p>When we recycle properly, we create less garbage and protect our beautiful planet from pollution.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🌱</div>
-                <h3>Protect Nature</h3>
-                <p>Litter harms animals and plants. By not littering, we keep nature safe and healthy.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">💪</div>
-                <h3>Be a Leader</h3>
-                <p>Real heroes take care of their community and inspire others to do the same!</p>
-            </div>
+<div class="game-container">
+    <div class="game">
+        <div class="trash-container">
+            <img src="images/paper.png" id="paper" class="trash" draggable="true" data-type="paper" alt="Paper">
+            <img src="images/plastic-bottle.png" id="plastic" class="trash" draggable="true" data-type="plastic"
+                alt="Plastic Bottle">
+            <img src="images/glass-bottle.png" id="glass" class="trash" draggable="true" data-type="glass"
+                alt="Glass Bottle">
         </div>
-    </section>
-
-    <!-- Recycling Game Section -->
-    <section class="game-section">
-        <h2>Sorting Challenge - Can You Sort the Trash?</h2>
-        <div class="game-container">
-            <div class="trash-items" id="trashContainer"></div>
-            
-            <div class="bins-container">
-                <div class="bin paper-bin" data-type="paper" draggable="false">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bin-paper.png-13N2QiBFNUqvLLdEdomY57RSAEq03m.webp" alt="Paper Bin">
-                    <p>PAPER</p>
-                </div>
-                <div class="bin plastic-bin" data-type="plastic" draggable="false">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bin-plastic.png-aQqWVRBTsZd9aMp3Xoq9vhYsc06mDv.webp" alt="Plastic Bin">
-                    <p>PLASTIC</p>
-                </div>
-                <div class="bin glass-bin" data-type="glass" draggable="false">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bin-glass.png-e0BJGiStzScmHbidVGGEO7Kp9nYLDZ.webp" alt="Glass Bin">
-                    <p>GLASS</p>
-                </div>
+        <div class="bins">
+            <div class="bin" data-type="paper">
+                <img src="images/bin-paper.png" alt="Paper Bin">
+                <p>Paper Bin</p>
+            </div>
+            <div class="bin" data-type="plastic">
+                <img src="images/bin-plastic.png" alt="Plastic Bin">
+                <p>Plastic Bin</p>
+            </div>
+            <div class="bin" data-type="glass">
+                <img src="images/bin-glass.png" alt="Glass Bin">
+                <p>Glass Bin</p>
             </div>
         </div>
-        
-        <div class="game-stats">
-            <p>Score: <span id="score">0</span> / 6</p>
-            <button id="resetBtn" class="btn-reset">Play Again</button>
-        </div>
-    </section>
+    </div>
+    <h2 id="message"></h2>
 
-    <!-- Video Section -->
-    <section class="video-section">
-        <h2>Learn More About Recycling</h2>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/Yoqivh3GkaE" title="Recycling Education Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>🌿 Every action counts! Start your eco-hero journey today. 🌿</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 
