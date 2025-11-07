@@ -41,9 +41,12 @@ function dropTrash(e) {
         message.style.color = 'red';
     }
 }
-window.addEventListener("scroll", function() {
-  let scrollValue = window.scrollY;
+window.addEventListener("scroll", () => {
+  let scroll = window.scrollY;
 
-  document.querySelector(".side-img.left").style.transform = `translateY(${scrollValue , 0.3}px)`;
-  document.querySelector(".side-img.right").style.transform = `translateY(${scrollValue , -0.3}px)`;
+  const leftImg = document.querySelector(".side-img.left");
+  const rightImg = document.querySelector(".side-img.right");
+
+  if (leftImg) leftImg.style.transform = `translateY(${scroll * -0.3}px)`;
+  if (rightImg) rightImg.style.transform = `translateY(${scroll * -0.3}px)`;
 });

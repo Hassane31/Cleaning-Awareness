@@ -12,16 +12,16 @@
     <nav class="navbar">
   <div class="logo">♻️ Eco Kids</div>
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
+    <li><a href="#cards">Home</a></li>
     <li><a href="#video">Learn</a></li>
     <li><a href="#game">Play</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#footer">About</a></li>
   </ul>
 </nav>
 <img src="images/kid-left.png" class="side-img left" alt="">
 <img src="images/kid-right.png" class="side-img right" alt="">
 
-<section class="eco-cards">
+<section class="eco-cards" id="cards">
   <h2>Why Be an Eco Hero?</h2>
   <div class="cards-container">
     <div class="card">
@@ -44,19 +44,15 @@
   </div>
 </section>
 
-    <div class="video-section">
+    <div class="video-section" id="video">
     <h2 class="video-title">Watch this short video to learn how to keep our planet clean !</h2>
 <div class="video-container">
     
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/watch?v=Yoqivh3GkaE"
-    title="Educational Recycling Video"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+  <video width="700" height="400" controls>
+  <source src="videos/What Should I Do With My Rubbish.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 </div>
 </div>
 
@@ -94,14 +90,40 @@
 </div>
     <script src="script.js"></script>
     
-    <footer class="footer">
-  <p>🌱 Made with love for a cleaner planet 🌍 | © 2025 Eco Kids</p>
-  <div class="footer-links">
-    <a href="#privacy">Privacy</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  
+  <footer class="footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Eco Kids</h3>
+      <p>Inspiring young heroes to protect the planet 🌱. Learn, play, and make a difference!</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#cards">Home</a></li>
+        <li><a href="#video">Learn</a></li>
+        <li><a href="#game">Play</a></li>
+        <li><a href="#footer">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact" >
+      <h4>Contact</h4>
+      <p>Email: hassanelaabane@gmail.com</p>
+      <p>Phone: +213 667 39 0</p>
+      <div class="social-links">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/github.png" alt="Github" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Eco Kids | Made with ❤️ for a cleaner planet</p>
+  </div>
 </footer>
+
 </div>
 </body>
 
