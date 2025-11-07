@@ -18,9 +18,10 @@ h1 {
 }
 
 .trash {
-  width: 100px;
+  width: 50px;
   cursor: grab;
   margin: 0 10px;
+  transition: 0.3s;
 }
 
 .bins {
@@ -30,7 +31,7 @@ h1 {
 }
 
 .bin {
-  border: 3px dashed #4caf50;
+  border: 3px solid #4caf50;
   padding: 10px;
   border-radius: 10px;
   background: #e8ffe8;
@@ -38,10 +39,14 @@ h1 {
 }
 
 .bin img {
-  width: 100px;
+  width: 150px;
 }
 
 .bin:hover {
+  transform: scale(1.1);
+  background: #c8f7c5;
+}
+.trash:hover {
   transform: scale(1.1);
   background: #c8f7c5;
 }
