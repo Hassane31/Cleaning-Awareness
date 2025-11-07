@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Heroes </title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Heroes </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1> Eco Heroes Game </h1>
-  <p>Drag the trash to the correct bin!</p>
+    <h1> Eco Heroes Game </h1>
+    <p>Drag the trash to the correct bin!</p>
 
- <div class="game">
+    <div class="game">
 
-  
-  <div class="trash-container">
-    <img src="images/paper.png" id="paper" class="trash" draggable="true" data-type="paper" alt="Paper">
-    <img src="images/plastic-bottle.png" id="plastic" class="trash" draggable="true" data-type="plastic" alt="Plastic Bottle">
-    <img src="images/glass-bottle.png" id="glass" class="trash" draggable="true" data-type="glass" alt="Glass Bottle">
-  </div>
 
-  
-  <div class="bins">
-    <div class="bin" data-type="paper">
-      <img src="images/bin-paper.png" alt="Paper Bin">
-      <p>Paper Bin</p>
+        <div class="trash-container">
+            <img src="images/paper.png" id="paper" class="trash" draggable="true" data-type="paper" alt="Paper">
+            <img src="images/plastic-bottle.png" id="plastic" class="trash" draggable="true" data-type="plastic"
+                alt="Plastic Bottle">
+            <img src="images/glass-bottle.png" id="glass" class="trash" draggable="true" data-type="glass"
+                alt="Glass Bottle">
+        </div>
+        <div class="bins">
+            <div class="bin" data-type="paper">
+                <img src="images/bin-paper.png" alt="Paper Bin">
+                <p>Paper Bin</p>
+            </div>
+            <div class="bin" data-type="plastic">
+                <img src="images/bin-plastic.png" alt="Plastic Bin">
+                <p>Plastic Bin</p>
+            </div>
+            <div class="bin" data-type="glass">
+                <img src="images/bin-glass.png" alt="Glass Bin">
+                <p>Glass Bin</p>
+            </div>
+        </div>
     </div>
-    <div class="bin" data-type="plastic">
-      <img src="images/bin-plastic.png" alt="Plastic Bin">
-      <p>Plastic Bin</p>
-    </div>
-    <div class="bin" data-type="glass">
-      <img src="images/bin-glass.png" alt="Glass Bin">
-      <p>Glass Bin</p>
-    </div>
-  </div>
+    <h2 id="message"></h2>
 
-</div>
-
-  <h2 id="message"></h2>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
