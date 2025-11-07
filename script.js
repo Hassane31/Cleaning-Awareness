@@ -1,7 +1,8 @@
 const trashes = document.querySelectorAll('.trash');
 const bins = document.querySelectorAll('.bin');
 const message = document.getElementById('message');
-
+const scoreDisplay = document.getElementById('score');
+let score = 0 ;
 trashes.forEach(trash => {
     trash.addEventListener('dragstart', dragStart);
 });
@@ -27,10 +28,15 @@ function dropTrash(e) {
     const binType = e.currentTarget.dataset.type;
 
     if (trashType === binType) {
+        score++;
+        scoreDisplay.textContent = score ;
         message.textContent = '🌟 Great job, little hero! You recycled correctly! 🌟';
         message.style.color = 'green';
         document.getElementById(trashId).style.display = 'none';
     } else {
+        score -=1 ;
+        if (score < 0)score = 0 ;
+        scoreDisplay.textContent = score ;
         message.textContent = 'Oops! Try again! 🗑️';
         message.style.color = 'red';
     }
