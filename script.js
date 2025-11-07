@@ -41,3 +41,9 @@ function dropTrash(e) {
         message.style.color = 'red';
     }
 }
+window.addEventListener("scroll", function() {
+  let scrollValue = window.scrollY;
+
+  document.querySelector(".side-img.left").style.transform = `translateY(${scrollValue , 0.3}px)`;
+  document.querySelector(".side-img.right").style.transform = `translateY(${scrollValue , -0.3}px)`;
+});
