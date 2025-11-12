@@ -34,6 +34,7 @@ body {
   bottom: 20px;
 }
 
+
 .side-img.right {
   right: 10px;
   bottom: 20px;
@@ -159,10 +160,18 @@ h1 {
     gap: 20px;
     flex-wrap: wrap;
 }
+#glass{
+  height: auto;
+  width: auto;
+}
+#plastic{
+  height: auto;
+  width: auto;
+}
 
 #paper {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: auto;
 }
 
 .trash {
