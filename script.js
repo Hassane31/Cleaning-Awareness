@@ -3,6 +3,9 @@ const bins = document.querySelectorAll('.bin');
 const message = document.getElementById('message');
 const scoreDisplay = document.getElementById('score');
 const restartbtn = document.getElementById('restart-btn');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
 let score = 0;
 trashes.forEach(trash => {
     trash.addEventListener('dragstart', dragStart);
@@ -64,6 +67,10 @@ function checkGameOver() {
     }
 }
 
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 
 restartBtn.addEventListener('click', () => {
     trashes.forEach(trash => {
