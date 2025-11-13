@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Heroes </title>
+    <title>Eco Hero Vault </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="navbar">
-  <div class="logo">♻️ Eco Kids</div>
+  <div class="logo">♻️ Eco Hero Vault</div>
   <nav class="navbar">
-  <div class="logo">♻️ Eco Kids</div>
-  <div class="menu-toggle" id="menu-toggle">☰</div> <!-- زر القائمة -->
+  <div class="logo">♻️ Eco Hero Vault</div>
+  <div class="menu-toggle" id="menu-toggle">☰</div> 
   <ul class="nav-links" id="nav-links">
     <li><a href="#cards">Home</a></li>
     <li><a href="#video" id="vd">Learn</a></li>
@@ -31,9 +31,24 @@
 </nav>
 <img src="images/kid-left.png" class="side-img left" alt="">
 <img src="images/kid-right.png" class="side-img right" alt="">
+<section class="welcome-section">
+  <div class="welcome-container">
+    <div class="welcome-text">
+      <h2>👋 Welcome, little Eco Heroes!</h2>
+      <p>
+        Hello kids! 🌱 Welcome to our fun and exciting site where you can learn how to take care of our planet, play games, and become real eco heroes! ♻️
+      </p>
+    </div>
+    <div class="welcome-icons">
+      <img src="images/kid1.png" alt="Kid Icon 1">
+      <img src="images/kid2.png" alt="Kid Icon 2">
+      <img src="images/kid3.png" alt="Kid Icon 3">
+    </div>
+  </div>
+</section>
 
 <section class="eco-cards" id="cards">
-  <h2>Why Be an Eco Hero?</h2>
+  <h2>Why Be an Hero Vault?</h2>
   <div class="cards-container">
     <div class="card">
       <img src="images/recycle-icon.png" alt="Recycle Icon">
@@ -56,9 +71,9 @@
 </section>
 
     <div class="video-section" id="video">
-    <h2 class="video-title">Watch this short video to learn how to keep our planet clean !</h2>
 <div class="video-container">
-    
+        <h2 class="video-title">Watch this short video to learn how to keep our planet clean !</h2>
+
   <video width="700" height="400" controls>
   <source src="videos/What Should I Do With My Rubbish.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -67,11 +82,11 @@
 </div>
 </div>
 
-<header> <h1> Help me with the trash disposal</h1></header>
-   
-    <p>Learn to recycle by playing this fun game !</p>
+
 
 <div class="game-container" id="game">
+  <header> <h1> Help me with the trash disposal</h1></header>
+    <p>Learn to recycle by playing this fun game !</p>
     <div class="game">
         <div class="trash-container">
 
@@ -105,37 +120,31 @@
 </div>
     <script src="script.js"></script>
     
-  <footer class="footer" id="footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <h3>Eco Kids</h3>
-      <p>Inspiring young heroes to protect the planet 🌱. Learn, play, and make a difference!</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#cards">Home</a></li>
-        <li><a href="#video">Learn</a></li>
-        <li><a href="#game">Play</a></li>
-        <li><a href="#footer">About</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-contact" >
-      <h4>Contact</h4>
-      <p>Email: hassanelaabane@gmail.com</p>
-      <p>Phone: +213 667 39 0</p>
+  <footer class="contact-footer" id="footer">
+  <div class="contact-container">
+    <div class="footer-left">
+      <h2>🌿 Eco Hero Vault</h2>
+      <p>Inspiring young heroes to protect our planet. Learn, play, and make a difference!</p>
       <div class="social-links">
-        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="images/github.png" alt="Github" /></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="https://wwww.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://wwww.github.com"><img src="images/github.png" alt="Github"></a>
+        <a href="https://wwww.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
       </div>
+    </div>
+
+    <div class="footer-right">
+      <h3>Contact Me</h3>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 Eco Kids | Made with ❤️ for a cleaner planet</p>
+    <p>© 2025 Hassan | Made with ❤️ for a cleaner planet</p>
   </div>
 </footer>
 

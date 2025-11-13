@@ -79,3 +79,22 @@ restartBtn.addEventListener('click', () => {
     message.textContent = '';
     restartBtn.style.display = 'none';
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name  ||!email  ||!message) {
+    alert("Please fill all fields.");
+    return;
+  }
+
+  const subject = encodeURIComponent(`Message from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+  const mailtoLink = `mailto:hassanelaabane@gmail.com?subject=${subject}&body=${body}`;
+
+  window.location.href = mailtoLink;
+});
