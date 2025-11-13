@@ -66,10 +66,8 @@ function checkGameOver() {
         restartBtn.style.display = "inline-block";
     }
 }
-
-
 menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+    navLinks.classList.toggle('active');
 });
 
 restartBtn.addEventListener('click', () => {
