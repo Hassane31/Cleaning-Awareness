@@ -169,8 +169,9 @@ body {
 }
 
 .card {
-  background: white;
+  background: #d6f5d6;
   border-radius: 15px;
+  border: 3px solid #4caf50;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 250px;
